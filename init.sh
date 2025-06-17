@@ -19,30 +19,30 @@ start() {
         npm install --registry=https://registry.npm.taobao.org
     fi
     
-    echo "[检测] pm2 version"
-    pm2 -v
-    if [ $? -eq 0 ] ;
-    then
-        echo "[pm2 ok]"
-    else
-        echo "[开始安装pm2]"
-        npm install -g pm2
-        ln -fs /www/wwwroot/node-v16.13.0-linux-x64/bin/pm2 /usr/local/bin/pm2
-        pm2 -v
-    fi
-    
-    # echo "[检测] yarn version"
-    # yarn -v
-    # if [ $? -eq 0 ];
+    # echo "[检测] pm2 version"
+    # pm2 -v
+    # if [ $? -eq 0 ] ;
     # then
-    #     echo "[yarn ok]"
-    # else 
-    #     echo "开始安装yarn"
+    #     echo "[pm2 ok]"
+    # else
+    #     echo "[开始安装pm2]"
     #     npm install -g pm2
-    #     ln -fs /www/wwwroot/node-v16.13.0-linux-x64/bin/yarn /usr/local/bin/yarn
-    #     yarn -v
-    #     yarn config set registry http://registry.npm.taobao.org/
+    #     ln -fs /www/wwwroot/node-v16.13.0-linux-x64/bin/pm2 /usr/local/bin/pm2
+    #     pm2 -v
     # fi
+    
+    echo "[检测] yarn version"
+    yarn -v
+    if [ $? -eq 0 ];
+    then
+        echo "[yarn ok]"
+    else 
+        echo "开始安装yarn"
+        npm install -g pm2
+        ln -fs /www/wwwroot/node-v16.13.0-linux-x64/bin/yarn /usr/local/bin/yarn
+        yarn -v
+        yarn config set registry http://registry.npm.taobao.org/
+    fi
 
     sudo npm install
    

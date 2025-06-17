@@ -1,0 +1,25 @@
+{
+  "name": "叮点跑腿",
+  "opName": "叮点跑腿后台管理系统",
+  "domain": "121.37.46.169",
+  "perfix": "http",
+  "serverPort": "8001",
+  "mysql": {
+    "host": "121.37.46.169",
+    "port": 3306,
+    "username": "chess",
+    "password": "123456",
+    "database": "chess",
+    "synchronize": true,
+    "logging": false,
+    "charset": "utf8mb4"
+  },
+  "redis": {
+    "client": {
+      "port": 6379,
+      "host": "121.37.46.169",
+      "password": "",
+      "db": 0
+    }
+  }
+}

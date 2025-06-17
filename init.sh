@@ -31,18 +31,18 @@ start() {
     #     pm2 -v
     # fi
     
-    echo "[检测] yarn version"
-    yarn -v
-    if [ $? -eq 0 ];
-    then
-        echo "[yarn ok]"
-    else 
-        echo "开始安装yarn"
-        npm install -g pm2
-        ln -fs /www/wwwroot/node-v16.13.0-linux-x64/bin/yarn /usr/local/bin/yarn
-        yarn -v
-        yarn config set registry http://registry.npm.taobao.org/
-    fi
+    # echo "[检测] yarn version"
+    # yarn -v
+    # if [ $? -eq 0 ];
+    # then
+    #     echo "[yarn ok]"
+    # else 
+    #     echo "开始安装yarn"
+    #     npm install -g pm2
+    #     ln -fs /www/wwwroot/node-v16.13.0-linux-x64/bin/yarn /usr/local/bin/yarn
+    #     yarn -v
+    #     yarn config set registry http://registry.npm.taobao.org/
+    # fi
 
     sudo npm install
    

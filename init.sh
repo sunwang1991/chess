@@ -57,11 +57,11 @@ start() {
     echo "[服务] 启动服务"
     sudo NODE_ENV=prod && pm2 restart ../ecosystem.config.js
     
-    echo "[后台] 安装依赖"
-    cd ../admin
-    sudo npm install
-    echo "[后台] 开始部署"
-    sudo npm run build
+    # echo "[后台] 安装依赖"
+    # cd ../admin
+    # sudo npm install
+    # echo "[后台] 开始部署"
+    # sudo npm run build
 
     echo "[完成] 请配置nginx来访问网站"  
     echo "- 访问网站如报错502，请在终端输入pm2 logs --lines 100,查看日志"

@@ -30,8 +30,8 @@ export default {
   redis: {
     client: {
       port: 6379, // Redis port
-      host: '113.46.139.108', // Redis host
-      password: '',
+      host: '127.0.0.1', // Redis host
+      password: '123456',
       db: 0,
     },
   },

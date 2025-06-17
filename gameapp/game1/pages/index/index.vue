@@ -64,6 +64,7 @@
 			},
 
 			async start() {
+				console.log(123) 
 				await this.createRoom()
 			},
 

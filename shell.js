@@ -1,17 +1,17 @@
 const {
   initConfig,
   initMysql,
-  initAdminConfig,
+  // initAdminConfig,
   initNginx,
-  initMiniappConfig,
+  // initMiniappConfig,
   initCert,
 } = require("./buildconfig");
 const init = async () => {
   initConfig();
   await initMysql();
-  initAdminConfig();
+  // initAdminConfig();
   initNginx();
-  initMiniappConfig();
+  // initMiniappConfig();
   initCert();
 };
 init();

@@ -13,8 +13,6 @@ run/
 *.un~
 .tsbuildinfo
 .tsbuildinfo.*
-config.local.ts
-config.prod.ts
 ecosysytem.config.js
 
 .DS_Store

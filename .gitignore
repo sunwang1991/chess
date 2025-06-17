@@ -30,7 +30,6 @@ pids
 *.seed
 *.pid.lock
 
-config.json
 yarn-error.log*
 nginx.conf
 ssl/*.crt

@@ -19,18 +19,18 @@ export default {
      * 单数据库实例
      */
     type: 'mysql',
-    host: 'localhost',
+    host: '113.46.139.108',
     port: 3306,
-    username: 'root',
+    username: 'chess',
     password: '123456',
-    database: 'ddrunv2',
+    database: 'chess',
     synchronize: true, // 如果第一次使用，不存在表，有同步的需求可以写 true
     logging: false,
   },
   redis: {
     client: {
       port: 6379, // Redis port
-      host: 'localhost', // Redis host
+      host: '113.46.139.108', // Redis host
       password: '',
       db: 0,
     },
@@ -46,11 +46,11 @@ export default {
   task: {
     redis: {
       port: 6379, // Redis port
-      host: 'localhost', // Redis host
-      password: '',
+      host: '113.46.139.108', // Redis host
+      password: '123456',
       db: 0,
     },
-    prefix: 'ddrun-task', // 这些任务存储的 key，都是 midway-task 开头，以便区分用户原有redis 里面的配置。
+    prefix: 'chess-task', // 这些任务存储的 key，都是 midway-task 开头，以便区分用户原有redis 里面的配置。
     defaultJobOptions: {
       repeat: {
         tz: 'Asia/Shanghai', // Task 等参数里面设置的比如（0 0 0 * * *）本来是为了0点执行，但是由于时区不对，所以国内用户时区设置一下。
